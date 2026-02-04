@@ -1,7 +1,7 @@
 ---
 name: code
 description: Open the current working directory or a specified folder in Visual Studio Code.
-allowed-tools: Bash
+allowed-tools: Bash(code *)
 ---
 
 ## Usage
