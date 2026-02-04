@@ -2,14 +2,28 @@
 
 A collection of skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
-## Installation
+## Quick Installation
+
+### Install All
+
+Install all skills globally for all agents (non-interactive):
 
 ```bash
-# Install globally
-npx skills add hyf0/skills -g
+npx skills add hyf0/skills -g --all
+```
 
-# Or install to a specific project
-npx skills add hyf0/skills
+### Install Code Skill Only
+
+```bash
+npx skills add hyf0/skills -g --all --skill code
+```
+
+### Selective Installation
+
+For interactive installation where you can pick specific skills and agents:
+
+```bash
+npx skills add hyf0/skills -g
 ```
 
 ## Available Skills
