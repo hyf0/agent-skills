@@ -14,13 +14,13 @@ npx skills add hyf0/agent-skills
 
 ## Available Skills
 
-### `/vscode`
+### `/code`
 
 Open the current working directory or a specified folder in Visual Studio Code.
 
 **Usage:**
-- `/vscode` - Opens the current working directory
-- `/vscode /path/to/folder` - Opens the specified folder
+- `/code` - Opens the current working directory
+- `/code /path/to/folder` - Opens the specified folder
 
 ## License
 

@@ -1,12 +1,13 @@
 ---
-name: vscode
+name: code
 description: Open the current working directory or a specified folder in Visual Studio Code.
+allowed-tools: Bash
 ---
 
 ## Usage
 
-- `/vscode` - Opens the current working directory
-- `/vscode /path/to/folder` - Opens the specified folder
+- `/code` - Opens the current working directory
+- `/code /path/to/folder` - Opens the specified folder
 
 ## Implementation
 
