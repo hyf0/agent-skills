@@ -22,7 +22,7 @@ Output files must use the pattern `{date}-{slug}.md` with ISO 8601 dates.
 
 ### 2. Replace Prose With Structure
 
-Convert paragraphs into bullet points, tables, or structured lists.
+Convert paragraphs into bullet points or structured lists.
 
 **Before (40 words):**
 ```markdown
@@ -39,19 +39,17 @@ Naming rules:
 - Kebab-case, max 64 chars, no spaces/capitals
 ```
 
-### 3. Use Tables for Decision Matrices
+### 3. Use Labeled Lists for Comparisons
 
-Replace scattered paragraphs comparing options with a single comparison table.
+Replace scattered paragraphs comparing options with a single structured list. Prefer bullet lists with bold labels over tables — skills are consumed by LLMs, not humans, and tables add formatting overhead without aiding comprehension.
 
 **Before:** Three separate paragraphs describing when to use each approach.
 
 **After:**
 ```markdown
-| Situation | Approach | Why |
-|-----------|----------|-----|
-| Workflow content | Keep in SKILL.md | Every invocation needs it |
-| Knowledge base / lookup content | Use reference/ files | Reduces per-invocation token cost |
-| SKILL.md over 500 lines | Split into reference/ files | Exceeds recommended limit |
+- **Workflow content:** Keep in SKILL.md — every invocation needs it.
+- **Knowledge base / lookup content:** Use reference/ files — reduces per-invocation token cost.
+- **SKILL.md over 500 lines:** Split into reference/ files — exceeds recommended limit.
 ```
 
 ### 4. Index Pattern for Large Knowledge Bases

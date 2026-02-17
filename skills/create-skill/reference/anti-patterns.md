@@ -1,7 +1,7 @@
 ## Content Anti-Patterns
 
 - **Teaching basics the agent already knows** — Do not explain how to write JavaScript, use git, parse JSON, or other general programming knowledge. The agent already knows this. Only include domain-specific knowledge it lacks.
-- **Wall of text** — Long unstructured paragraphs are hard for the agent to parse. Use headers, bullet points, numbered steps, and tables instead.
+- **Wall of text** — Long unstructured paragraphs are hard for the agent to parse. Use headers, bullet points, and numbered steps instead.
 - **Voodoo constants** — Magic numbers or thresholds without explanation. If you specify a limit (e.g., "max 3 retries"), explain why that number was chosen, or remove it if it is arbitrary.
 - **Time-sensitive information** — Version numbers, URLs, API endpoints, or release dates that will become stale. If the skill needs version info, instruct the agent to check at runtime.
 - **Inconsistent terminology** — Using "component", "module", and "widget" interchangeably for the same concept. Pick one term and use it everywhere.
