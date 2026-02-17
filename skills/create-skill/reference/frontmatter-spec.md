@@ -30,14 +30,27 @@ metadata:
 | Field | Purpose | Format |
 |-------|---------|--------|
 | `license` | License identifier | e.g., `MIT`, `Apache-2.0` |
-| `allowed-tools` | Tools the skill can use | Space-separated: `"Bash(python:*) Bash(npm:*) WebFetch"` |
 | `metadata` | Arbitrary key-value pairs | `author`, `version`, `mcp-server`, `category`, `tags` |
 | `compatibility` | Environment requirements | 1-500 chars, e.g., "Requires Node.js 18+" |
+
+## Claude Code Extensions
+
+These fields are specific to Claude Code. Other agents may ignore them.
+
+| Field | Purpose | Format |
+|-------|---------|--------|
+| `allowed-tools` | Tools the skill can use | Space-separated: `"Bash(python:*) Bash(npm:*) WebFetch"` |
 | `disable-model-invocation` | Only user can trigger (slash command only) | Boolean |
-| `user-invocable` | Only the agent can trigger (not a slash command) | Boolean, set to `false` |
+| `user-invocable` | Creates a background skill when `false` — hidden from `/` menu, description always loaded into context, only Claude can invoke it | Boolean, set to `false` |
 | `context` | Execution context | `fork` for isolated subagent |
 | `argument-hint` | Autocomplete hint for slash commands | e.g., `[file-path]` |
 | `model` | Force a specific model | Model identifier string |
+
+## Background Skills
+
+Set `user-invocable: false` to create a background skill. Background skills are hidden from the `/` menu and cannot be triggered by the user directly. Their description is always loaded into context, so Claude can decide when to invoke them.
+
+Use background skills for knowledge that should always be available but users shouldn't invoke directly — e.g., coding standards, review checklists, or context that informs other skills.
 
 ## Validation Checklist
 

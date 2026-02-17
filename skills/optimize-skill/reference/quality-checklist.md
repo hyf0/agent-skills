@@ -22,6 +22,7 @@ Score each item as:
 - [ ] `license` field is present
 - [ ] `allowed-tools` is present if and only if the skill runs commands
 - [ ] `metadata` is present (at minimum: author, version)
+- [ ] `user-invocable: false` is set if the skill is background knowledge not meant for direct user invocation
 
 ## Body Content
 

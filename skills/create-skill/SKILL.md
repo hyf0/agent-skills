@@ -30,6 +30,7 @@ Work through 2-3 concrete examples of how the skill will be used. Ask the user:
 - What does the skill do? Can you show me an example of how you'd use it?
 - What would a user say that should trigger this skill?
 - Does it need `allowed-tools` (does it run shell commands, use MCP tools)?
+- Should this be a background skill? (always-loaded context, not user-invocable — see frontmatter-spec for `user-invocable: false`)
 
 For each example, walk through how it would be executed from scratch. This reveals what knowledge, scripts, or assets are needed.
 
