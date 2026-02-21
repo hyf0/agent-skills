@@ -17,6 +17,7 @@ Generate developer tool feature announcement tweets that are understated, proof-
 Copy this checklist and check off each step:
 
 ```
+- [ ] Step 0: Understand the feature (read code/PR/commits if available)
 - [ ] Step 1: Classify the feature type
 - [ ] Step 2: Gather input details
 - [ ] Step 3: Draft main tweet
@@ -24,6 +25,17 @@ Copy this checklist and check off each step:
 - [ ] Step 5: Suggest visual proof
 - [ ] Step 6: Verify against anti-patterns
 ```
+
+### Step 0: Understand the Feature
+
+Before writing anything, build a real understanding of the feature. If the user provides a PR, commit, branch, issue, or file path:
+
+- Read the relevant code changes, PR description, or commit messages
+- Understand what the feature actually does at a technical level
+- Identify the key insight — what makes this interesting or useful
+- Look for benchmark data, test results, or before/after comparisons in the codebase
+
+If the user only provides a brief description, ask clarifying questions to fill gaps in understanding. A good tweet requires genuinely understanding the feature — surface-level descriptions produce surface-level tweets.
 
 ### Step 1: Classify the Feature Type
 
