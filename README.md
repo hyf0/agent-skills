@@ -54,7 +54,7 @@ Analyzes and optimizes an existing agent skill for conciseness, discoverability,
 
 ### `/dev-announce`
 
-Generates developer tool feature announcement tweets in an understated, data-driven style. Inspired by Jarred Sumner's Bun announcement tweets — understated confidence, proof-driven claims, and no hype words. Outputs a main tweet, 1-3 thread replies, and actionable visual/image descriptions for each.
+Generates developer tool feature announcement tweets in an understated, data-driven style — proof-driven claims, no hype words, let the numbers speak. Outputs a main tweet, 1-3 thread replies, and actionable visual/image descriptions for each.
 
 **Usage:**
 - `/dev-announce Rolldown now supports CSS code splitting` - Generates a tweet thread for the feature
