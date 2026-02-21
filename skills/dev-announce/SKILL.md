@@ -17,16 +17,16 @@ Generate developer tool feature announcement tweets that are understated, proof-
 Copy this checklist and check off each step:
 
 ```
-- [ ] Step 0: Understand the feature (read code/PR/commits if available)
-- [ ] Step 1: Classify the feature type
-- [ ] Step 2: Gather input details
-- [ ] Step 3: Draft main tweet
-- [ ] Step 4: Draft thread replies (1-3 max)
-- [ ] Step 5: Suggest visual proof
-- [ ] Step 6: Verify against anti-patterns
+- [ ] Step 1: Understand the feature (read code/PR/commits if available)
+- [ ] Step 2: Classify the feature type
+- [ ] Step 3: Gather input details
+- [ ] Step 4: Draft main tweet
+- [ ] Step 5: Draft thread replies (1-3 max)
+- [ ] Step 6: Suggest visual proof
+- [ ] Step 7: Verify against anti-patterns
 ```
 
-### Step 0: Understand the Feature
+### Step 1: Understand the Feature
 
 Before writing anything, build a real understanding of the feature. If the user provides a PR, commit, branch, issue, or file path:
 
@@ -37,7 +37,7 @@ Before writing anything, build a real understanding of the feature. If the user 
 
 If the user only provides a brief description, ask clarifying questions to fill gaps in understanding. A good tweet requires genuinely understanding the feature — surface-level descriptions produce surface-level tweets.
 
-### Step 1: Classify the Feature Type
+### Step 2: Classify the Feature Type
 
 Determine which category the feature falls into:
 
@@ -49,7 +49,7 @@ Determine which category the feature falls into:
 | **Compatibility** | Standards support, new format, ecosystem integration |
 | **Bundled feature** | Multiple things combined into one simple experience |
 
-### Step 2: Gather Input Details
+### Step 3: Gather Input Details
 
 Ask the user for (if not already provided):
 - Product name (e.g., "Rolldown")
@@ -59,7 +59,7 @@ Ask the user for (if not already provided):
 - Upstream projects to credit (optional)
 - Known limitations or future plans (optional)
 
-### Step 3: Draft the Main Tweet
+### Step 4: Draft the Main Tweet
 
 **Opening:** Always use "In the next version of [Product]"
 
@@ -79,7 +79,7 @@ Ask the user for (if not already provided):
 - Keep under 280 characters when possible (exclude image placeholders)
 - End with either a punchy tagline, inline benchmark, or note that an image is attached
 
-### Step 4: Draft Thread Replies
+### Step 5: Draft Thread Replies
 
 Generate 1-3 replies. Each reply peels a different layer:
 
@@ -104,7 +104,7 @@ Generate 1-3 replies. Each reply peels a different layer:
 - 1-3 replies max, never more
 - Credit contributors with @mentions, credit upstream projects by name
 
-### Step 5: Suggest Visual Proof
+### Step 6: Suggest Visual Proof
 
 For each tweet/reply that would benefit from an image, add a bracketed suggestion:
 
@@ -119,7 +119,7 @@ For each tweet/reply that would benefit from an image, add a bracketed suggestio
 
 Principle: the image should be self-contained proof. Someone seeing only the image should understand the claim.
 
-### Step 6: Verify Against Anti-Patterns
+### Step 7: Verify Against Anti-Patterns
 
 Check the draft against these — if any match, revise:
 
