@@ -52,6 +52,14 @@ Analyzes and optimizes an existing agent skill for conciseness, discoverability,
 
 > Both `create-skill` and `optimize-skill` are based on real-world skill authoring experience, the [official skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices), [The Complete Guide to Building Skills for Claude (PDF)](https://resources.anthropic.com/hubfs/The-Complete-Guide-to-Building-Skill-for-Claude.pdf), and [Anthropic's skill-creator](https://github.com/anthropics/skills/blob/main/skills/skill-creator/SKILL.md).
 
+### `/dev-announce`
+
+Generates developer tool feature announcement tweets in an understated, data-driven style. Inspired by Jarred Sumner's Bun announcement tweets — understated confidence, proof-driven claims, and no hype words. Outputs a main tweet, 1-3 thread replies, and actionable visual/image descriptions for each.
+
+**Usage:**
+- `/dev-announce Rolldown now supports CSS code splitting` - Generates a tweet thread for the feature
+- `/dev-announce` - Prompts you for feature details before generating
+
 ## License
 
 MIT
