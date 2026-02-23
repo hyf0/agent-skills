@@ -1,6 +1,6 @@
 # Examples
 
-12 real tweet threads demonstrating the style. Grouped by feature type for quick lookup.
+13 real tweet threads demonstrating the style. Grouped by feature type for quick lookup.
 
 ## New API Announcements
 
@@ -37,6 +37,12 @@
 **Reply 1:** This makes apps using Bun's bundler very slightly faster for two reasons: 1) faster property accesses for imports that point to what were commonjs modules 2) fewer objects for the GC to visit
 
 **Reply 2:** _[Before/after table: Total objects -11%, Heap -4MB, GetterSetter -61%, Function -11%]_
+
+### Path optimization (number-first, explanation in reply)
+
+**Main:** In the next version of Rolldown / Up to 9% faster bundling by optimizing how file paths are handled internally. / _[Benchmark table]_
+
+**Reply 1:** A bundler resolves thousands of paths per build, and it turns out most of them are already clean. We were allocating new path buffers every time regardless, even when there was nothing to normalize. Now we just reuse the original when it's already good, and rewrote the relative path computation to work directly on strings instead of walking path components one by one.
 
 ### Claude Code Bash tool
 
